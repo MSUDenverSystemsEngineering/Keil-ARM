@@ -152,7 +152,7 @@ Try {
 		## <Perform Post-Installation tasks here>
 		## The default RTE path is linked to a folder that needs admin access.  This copies an adjusted TOOLS.INI file with an accessible RTEPATH
 		Copy-Item "$dirSupportFiles\TOOLS.INI" -Destination "C:\Keil_v5" -Force
-		Copy-Item "$dirSupportFiles\Keil uVision5.lnk" -Destination $envCommonDesktop
+		Copy-Item "$dirSupportFiles\Keil uVision5.lnk" -Destination "C:\Users\Public\Desktop"
 
 		## Display a message at the end of the install
 		If (-not $useDefaultMsi) {}
