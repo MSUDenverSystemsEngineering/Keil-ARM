@@ -127,7 +127,8 @@ Try {
 		Show-InstallationProgress
 
 		## <Perform Pre-Installation tasks here>
-
+		##Uninstalls previous uVision version
+		Execute-MSI -Action 'Uninstall' -Path '{62109D18-3C6A-404D-A6B2-37717A9C18AB}' -ContinueOnError
 
 		##*===============================================
 		##* INSTALLATION
